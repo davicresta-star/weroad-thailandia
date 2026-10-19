@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Viaggio & notti · Thailandia Expedition</title>
+  <meta name="description" content="Voli, volo interno, treno notturno, ogni spostamento e dove si dorme nei 13 giorni in Thailandia.">
+  <meta name="theme-color" content="#110c09">
+  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;1,400&family=Chakra+Petch:wght@500;600;700&family=Taviraj:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <header class="nav" data-page="logistica"></header>
+
+  <main>
+    <section class="phero">
+      <img src="assets/img/koh-tao.jpg" alt="">
+      <span class="thai-big" aria-hidden="true">เรือ</span>
+      <div class="wrap">
+        <span class="tag">Viaggio & notti</span>
+        <h1>Come ci si muove, <em>dove si dorme</em></h1>
+        <p class="lead">Van, un volo interno, traghetti, speedboat e un treno di notte. Dodici notti, fra cui una in homestay, una a Koh Tao e una in cuccetta.</p>
+      </div>
+    </section>
+
+    <!-- VOLI DALL'ITALIA -->
+    <section class="sez" id="voli">
+      <div class="wrap">
+        <div class="sez-head reveal">
+          <span class="tag">Voli</span>
+          <h2>Chi vola <em>quando</em></h2>
+          <p>Gli intercontinentali sono personali, il volo interno del Day 6 lo facciamo tutti insieme. Il gruppo si ritrova a Bangkok il 31 ottobre e si scioglie il 12 novembre.</p>
+        </div>
+        <div id="voli-box" class="reveal"></div>
+      </div>
+    </section>
+
+    <!-- OGNI SPOSTAMENTO -->
+    <section class="sez" id="spostamenti">
+      <div class="wrap">
+        <div class="sez-head reveal">
+          <span class="tag">Tutti i trasferimenti</span>
+          <h2>Ogni tratta, <em>in ordine</em></h2>
+          <p>Quasi tutto è incluso e prenotato. L'unico tratto da pagare a parte è il transfer dall'aeroporto di Surat Thani all'hotel.</p>
+        </div>
+        <table class="tab-spost reveal" id="tab-spost">
+          <thead><tr><th>Day</th><th>Tratta</th><th>Mezzo</th><th>Durata</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- DOVE SI DORME -->
+    <section class="sez lacca-bg" id="notti">
+      <div class="wrap">
+        <div class="sez-head reveal">
+          <span class="tag">Dodici notti</span>
+          <h2>Dove si <em>dorme</em></h2>
+          <p>Gli hotel sono quelli prenotati da WeRoad e non si cambiano sul posto: in Thailandia la legge non lo permette.</p>
+        </div>
+        <ol class="notti stagger" id="notti-box"></ol>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="assets/js/data.js?v=2"></script>
+  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/logistica.js?v=2"></script>
+</body>
+</html>

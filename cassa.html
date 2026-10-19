@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Cassa comune · Thailandia Expedition</title>
+  <meta name="description" content="La cassa comune della Thailandia Expedition: quanto, cosa copre, cosa c'è già nel pacchetto e cosa resta fuori. Più mance e contanti.">
+  <meta name="theme-color" content="#110c09">
+  <link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,500;0,600;1,400&family=Chakra+Petch:wght@500;600;700&family=Taviraj:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css?v=2">
+</head>
+<body>
+  <header class="nav" data-page="cassa"></header>
+
+  <main>
+    <section class="sez lacca-bg" style="padding-bottom:clamp(50px,8vw,90px)">
+      <div class="wrap">
+        <span class="tag" style="display:block;margin-bottom:18px">Cassa comune</span>
+        <div class="quota">
+          <div class="quota-num"><b class="oro shine" id="q-num">200</b><span>€</span></div>
+          <div class="quota-side">
+            <span class="baht" id="q-baht"></span>
+            <p>A testa, per tutto il viaggio. Serve a pagare insieme le attività extra decise per il gruppo: il tuk tuk tour di Ayutthaya, il giro in bici a Sukhothai e le cinque del pacchetto «Spiagge e templi». I 220 € sono solo il costo delle attività: a parte, ognuno verserà anche una mancia per autisti e guide.</p>
+            <p id="q-metodo" hidden></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sez">
+      <div class="wrap">
+        <div class="sez-head reveal">
+          <span class="tag">Cosa copre</span>
+          <h2>Sette uscite, <em>pagate una volta sola</em></h2>
+          <p>Sono già scelte e incastrate nei giorni dell'itinerario: la cassa paga e nessuno tira fuori il portafoglio al tavolo.</p>
+        </div>
+        <ol class="copre stagger" id="copre"></ol>
+      </div>
+    </section>
+
+    <section class="sez lacca-bg">
+      <div class="wrap">
+        <div class="due-col">
+          <div class="reveal">
+            <h2 class="col-titolo">Già nel pacchetto <span class="thai">รวม</span></h2>
+            <ul class="lista-fiori" id="incluso"></ul>
+          </div>
+          <div class="reveal">
+            <h2 class="col-titolo">Resta fuori <span class="thai">ไม่รวม</span></h2>
+            <ul class="lista-fiori no" id="escluso"></ul>
+            <div class="nota-box" style="margin-top:30px">
+              <h3>Le facoltative</h3>
+              <p>Tutto ciò che nell'<a href="itinerario.html" style="color:var(--oro-hi)">itinerario</a> è segnato «a parte» si paga di tasca propria, solo da chi partecipa: la cena con menu fisso in hotel (390 THB), i massaggi, i rooftop.</p>
+              <p>Le attività si prenotano con i partner locali di WeRoad, che hanno licenza e assicurazione: in Thailandia è la regola, e non si improvvisa sul posto.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sez" id="prezzi">
+      <div class="wrap">
+        <div class="sez-head reveal">
+          <span class="tag">Quanto si spende</span>
+          <h2>I prezzi, <em>più o meno</em></h2>
+          <p>La Thailandia costa meno dell'Europa, ma nei posti turistici come Bangkok, Chiang Mai e le isole i prezzi salgono: vale per il cibo, i transfer, i vestiti e i souvenir. Qualche cifra media per orientarsi.</p>
+        </div>
+        <ul class="prezzi stagger" id="prezzi-box"></ul>
+      </div>
+    </section>
+
+    <section class="sez lacca-bg">
+      <div class="wrap due-col">
+        <div class="reveal">
+          <div class="sez-head">
+            <span class="tag">Mance</span>
+            <h2>Non obbligatorie, <em>molto apprezzate</em></h2>
+            <p>Soprattutto nei servizi. Quelle a guide e autisti non sono nella cassa comune: ognuno versa anche la sua parte.</p>
+          </div>
+          <table class="mance" id="mance"></table>
+        </div>
+        <div class="reveal">
+          <div class="sez-head">
+            <span class="tag">Contanti</span>
+            <h2>Il baht, <em>in tasca</em></h2>
+          </div>
+          <div class="nota-box">
+            <h3>Pochi prelievi, grossi</h3>
+            <p>Ogni prelievo al bancomat costa circa <b>220 baht</b> (6 €) di commissione, che si prelevino 1.000 o 20.000 baht. Conviene ritirare poche volte cifre alte, oppure portare euro e cambiarli in città, dove il cambio è migliore che in aeroporto.</p>
+            <p>A Bangkok, Chiang Mai e nelle zone turistiche la carta di solito funziona senza problemi: ristoranti, 7-Eleven, negozi più grandi. Sulle isole e nei localini tipici invece conviene avere sempre abbastanza contanti, come per mercati, street food e tuk tuk.</p>
+            <p>Alcuni hotel chiedono una cauzione al check-in: viene restituita alla partenza.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/data.js?v=2"></script>
+  <script src="assets/js/main.js?v=2"></script>
+  <script>
+    (function () {
+      const { esc, thai } = UI;
+      const C = TRIP.cassa;
+      document.getElementById("q-num").textContent = C.quota;
+      const baht = Math.round((C.quota * TRIP.cambio) / 10) * 10;
+      document.getElementById("q-baht").innerHTML = `≈ ${UI.nf.format(baht)} ฿ <span class="thai">บาท</span>`;
+      if (C.metodo) { const m = document.getElementById("q-metodo"); m.hidden = false; m.innerHTML = `<b>Come versarla:</b> ${esc(C.metodo)}`; }
+
+      document.getElementById("copre").innerHTML = C.copre.map((c) => {
+        const g = UI.day(c.day);
+        return `<li class="reveal">
+          <span class="c-day">${thai(c.day)}<small>Day ${c.day} · ${UI.dataBreve(g.data)}</small></span>
+          <a href="itinerario.html#day-${c.day}"><b>${esc(c.voce)}</b></a>
+          <span class="c-prezzo">${c.prezzo != null ? c.prezzo + " €" : "da definire"}</span>
+          <span class="c-nota">${esc(c.nota)}</span>
+        </li>`;
+      }).join("");
+
+      document.getElementById("incluso").innerHTML = TRIP.pacchetto.incluso.map((x) => `<li>${esc(x)}</li>`).join("");
+      document.getElementById("escluso").innerHTML = TRIP.pacchetto.escluso.map((x) => `<li>${esc(x)}</li>`).join("");
+      document.getElementById("mance").innerHTML = TRIP.mance.map((m) => `
+        <tr><td>${esc(m.chi)}${m.per ? `<span>${esc(m.per)}</span>` : ""}</td><td>${esc(m.quanto)}${m.unita ? `<small>${esc(m.unita)}</small>` : ""}</td></tr>`).join("");
+      document.getElementById("prezzi-box").innerHTML = TRIP.prezzi.map((x) => `
+        <li class="reveal"><span>${esc(x.v)}${x.n ? `<small>${esc(x.n)}</small>` : ""}</span><b>${esc(x.p)}</b></li>`).join("");
+      const tot = C.copre.reduce((a, c) => a + (c.prezzo || 0), 0);
+      document.getElementById("copre").insertAdjacentHTML("afterend", `
+        <div class="copre-tot reveal"><span>Totale delle ${C.copre.length} attività</span><b>${tot} €</b><span>${C.quota - tot > 0 ? `Restano ${C.quota - tot} € per le mance a guide e autisti` : "Solo attività: le mance a guide e autisti sono a parte"} · circa ${UI.nf.format(Math.round(tot * TRIP.cambio / 10) * 10)} THB le attività</span></div>`);
+      UI.osserva();
+    })();
+  </script>
+</body>
+</html>

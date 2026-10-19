@@ -1,0 +1,22 @@
+# Sistema operativo
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+._*
+
+# Python (il server locale di sviluppo)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Roba di lavoro che non serve al sito
+*.log
+.claude/
