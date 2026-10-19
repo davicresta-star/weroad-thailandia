@@ -1195,3 +1195,20 @@ body.sheet-lock { overflow: hidden; }
 .hallo-regole b { color: var(--carta); }
 
 .badge.solo { color: var(--calendula); }
+
+/* ============================================================
+   TELEFONO: correzioni per i dispositivi veri
+   ============================================================ */
+@media (max-width: 999px) {
+  /* l'hero non deve finire sotto la tab bar */
+  .hero { min-height: calc(100svh - var(--nav-h) - 68px - var(--safe-b) - env(safe-area-inset-top, 0px)); }
+  /* su iOS la grana fissa in blend e lo zoom continuo dell'hero rendono lo scroll a scatti */
+  body::before { display: none; }
+  .hero-img { animation: none !important; }
+  .nastri span, .hallo-phi { animation: none !important; }
+  /* blur meno pesante sulle barre */
+  .nav, .tabbar, .salti { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .nav { background: rgba(17, 12, 9, .97); }
+  .tabbar { background: rgba(20, 14, 11, .98); }
+  .salti { background: rgba(17, 12, 9, .97); }
+}
